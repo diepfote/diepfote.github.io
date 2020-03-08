@@ -1,8 +1,21 @@
 # Rootless Podman (Mac OS/Darwin)
 Darwin is not able to run Linux containers on its own.
-Thus you need a Linux VM as a Container Host, one option is to use Docker Desktop.  
+Thus you need a Linux VM as a container host, one option is to use Docker Desktop (uses *hyperkit* to provide hypervisor capabilities; no full-blown VM necessary).
 However if you came to appreciate Podman on Linux there is no *default* way to install it.
 This is what I am trying to provide.
+
+***Important to note***:  
+This setup does not support docker/podman host mounts on the "real host" (not guest VM) at the moment (if it will ever).  
+As this setup uses a VirtualBox guest host mounts naturally occur on the guest machine. This is neither expected behavior for docker, nor podman. A user usally uses host mounts to modify or access files on his or her host machine.
+
+The only way I can think of to provide host mounts is to mount the host's filesystem using the "vboxsf" kernel module.
+The issue I am facing here is that configuration on Mac and Linux differs even for \$HOME.
+Thus mounting /home/$USER (host) to /home/rootless (guest) is not a viable option.  
+*Why would I want to do this?*  Think of `$ podman run -v ~/.ssh/id_rsa:/home/rootless/.ssh/id_rsa:ro archlinux bash`. This would allow a user to use a private key on his/her host without an explicit copy-command.
+
+If anyone comes up with a way of mounting the host's filesystem inside the guest in a transparent way, please let me know.  
+
+If I can make time I will try to accomplish a "transparent" mount at least for $HOME. (setting HOME to an alternate location when running a docker/podman command might do the trick? ... "-e HOME=/home/someotheruser")
 
 ## Install podman on your host
 ```
@@ -38,7 +51,8 @@ io.podman.socket                           enabled
 
 ### Setup a vbox network interface for the podman remote
 
-Click on *Host Network Adapter*, then add a vbox interface named *vboxnet3* with address and netmask: *192.168.52.1/24*, **do not enable DHCP**
+Click on *Host Network Adapter*, then add a vbox interface named *vboxnet3* with address and netmask:  
+*192.168.52.1/24*, **do not enable DHCP**
 
 ![vbox interface 1](vbox-interface1.png)
 ![vbox interface 2](vbox-interface2.png)
@@ -49,7 +63,7 @@ Click on *Host Network Adapter*, then add a vbox interface named *vboxnet3* with
 
 [Image Link](https://drive.google.com/open?id=16Zj_DJiaNGDjLulWqYRHqs6zhm_Cdze6)  
 sha256sum: *e312b781ee0f1d08ee9338d9cd4cf988f490f2bfc39a9a67df8c915b734693b9*  
-sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd85e674cf9519860c0ec9ff0cd1862db2d883abeecec9cddaa030c31e5bab*
+sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd85e674cf9519860c0ec9ff0cd1862db2d883abeecec9cddaa030c31e5bab*  
 
 ### Import the appliance
 ![import appliance](import-appliance.png)
@@ -59,7 +73,7 @@ sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd
 * On the **remote host** do:
     ```
     $ sudo vim /etc/ssh/sshd_config
-    ```  
+    ```
     and ***uncomment*** the following lines:
     ```
     #PasswordAuthentication yes
@@ -72,7 +86,7 @@ sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd
 
     <br>
 
-* On **your host**:  
+* On **your host**:
     ```
     # append the podman-remote to your hosts file
     $ echo '192.168.52.22 podman-remote' | sudo tee -a /etc/hosts
@@ -95,7 +109,7 @@ sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd
     ```
 
 
-* On the **remote host**:  
+* On the **remote host**:
     ***comment*** the lines previously uncommented:
     ```
     PasswordAuthentication yes
