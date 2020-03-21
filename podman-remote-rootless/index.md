@@ -4,7 +4,7 @@ Thus you need a Linux VM as a container host, one option is to use Docker Deskto
 However if you came to appreciate Podman on Linux there is no *default* way to install it.
 This is what I am trying to provide.
 
-***Important to note***:  
+## Important to note
 This setup does not support docker/podman host mounts on the "real host" (not guest VM) at the moment (if it will ever).  
 As this setup uses a VirtualBox guest host mounts naturally occur on the guest machine. This is neither expected behavior for docker, nor podman. A user usally uses host mounts to modify or access files on his or her host machine.
 
@@ -16,6 +16,10 @@ Thus mounting /home/$USER (host) to /home/rootless (guest) is not a viable optio
 If anyone comes up with a way of mounting the host's filesystem inside the guest in a transparent way, please let me know.  
 
 If I can make time I will try to accomplish a "transparent" mount at least for $HOME. (setting HOME to an alternate location when running a docker/podman command might do the trick? ... "-e HOME=/home/someotheruser")
+
+### **Update**
+Go and have a look at [boot2podman](https://github.com/boot2podman/machine).
+
 
 ## Install podman on your host
 ```
