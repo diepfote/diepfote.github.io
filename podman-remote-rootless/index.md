@@ -35,6 +35,12 @@ For convenience reasons I installed *vim*.
 Apart from that I had to install *git*, *go*, *yay* (a package manager for the Arch User Repository [AUR]) and a few other dependencies to install [fuse-overlayfs](https://aur.archlinux.org/packages/fuse-overlayfs/).
 This filesystem abstraction should improve reads and writes inside containers.
 
+### **Update**
+
+* fuse-overlayfs is no longer an *AUR* package; now an official *community* package
+* *yay* package manager removed (no longer necessary for *fuse-overlayfs* installation)
+
+
 ### User and password
 user: rootless  
 password: rootless
@@ -66,8 +72,8 @@ Click on *Host Network Adapter*, then add a vbox interface named *vboxnet3* with
 ### Download my Arch Linux image
 
 [Image Link](https://drive.google.com/open?id=16Zj_DJiaNGDjLulWqYRHqs6zhm_Cdze6)  
-sha256sum: *e312b781ee0f1d08ee9338d9cd4cf988f490f2bfc39a9a67df8c915b734693b9*  
-sha512sum: *31de625fcde714897d3d3b05a2a47933914f57a7d55e3b4b32f9aa3ee05885f711fd85e674cf9519860c0ec9ff0cd1862db2d883abeecec9cddaa030c31e5bab*  
+sha256sum: *34f464f59f0f89616c0842db04b2a79b061a8466df75f573b9a3eb46c4810f81*  
+sha512sum: *bb81b8c64260cf394b663ce54b235405dec4ec1ccefe628ce684a67007b757ddf5a607a541d2984fedcdf20a94bbbbfc2253199cc0e858f45d83dcba755b7784*  
 
 ### Import the appliance
 ![import appliance](import-appliance.png)
