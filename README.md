@@ -1,4 +1,4 @@
 # Cheatsheets and mini projects
 
 * [my gists](https://gist.github.com/search?q=user%3Aflorianbegusch+%22mini-project%22&ref=searchresults)
-* [personal cheatsheets](http://florianbegusch.cheatsheets.fastmail.com.user.fm/)
+* [my cheatsheet collection](http://github.com/florianbegusch/cheatsheets)
