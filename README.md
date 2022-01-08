@@ -5,3 +5,4 @@
 * [personal bash script collection](http://github.com/florianbegusch/scripts)
 * [personal bash script collection helpers in go](http://github.com/florianbegusch/golang-tools)
 * [personal bash script collection helpers in python](http://github.com/florianbegusch/python-tools)
+* [personal vim config](http://github.com/florianbegusch/vim)
