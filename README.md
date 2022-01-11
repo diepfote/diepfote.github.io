@@ -1,8 +1,11 @@
-# Cheatsheets and mini projects
+### Miscellaneous
 
 * [mini projects](https://gist.github.com/search?q=user%3Aflorianbegusch+%22mini-project%22&ref=searchresults)
-* [personal cheatsheet collection](http://github.com/florianbegusch/cheatsheets)
-* [personal bash script collection](http://github.com/florianbegusch/scripts)
-* [personal bash script collection helpers in go](http://github.com/florianbegusch/golang-tools)
-* [personal bash script collection helpers in python](http://github.com/florianbegusch/python-tools)
-* [personal vim config](http://github.com/florianbegusch/vim)
+* [cheatsheet collection](http://github.com/florianbegusch/cheatsheets)
+
+### Some of my personal terminal configs
+
+* [bash script & source-me collection](http://github.com/florianbegusch/scripts)
+  * [helpers in go](http://github.com/florianbegusch/golang-tools)
+  * [helpers in python](http://github.com/florianbegusch/python-tools)
+* [vim config](http://github.com/florianbegusch/vim-config)
