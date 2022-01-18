@@ -2,7 +2,10 @@
 
 ### Full archlinux on Mac OS (docker container)
 
-Tries to resemble my personal archlinux system at home as close as possible.
+Tries to resemble my personal archlinux system at home as close as possible.  
+VM and container runtime set up via `limactl` -> [limactl config](https://github.com/florianbegusch/dot-files/blob/master/.lima/default/lima.yaml).
+
+Commands below explicitly require these [Mac OS host mounts](https://github.com/florianbegusch/dot-files/blob/25f80250cfdd92b2a04c374915c9c0e5628a009f/.lima/default/lima.yaml#L34).
 
 * build process:  
   
