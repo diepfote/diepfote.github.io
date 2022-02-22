@@ -9,11 +9,14 @@
 
 #### Hotkeys
 
-I tried to use [skhd](https://github.com/koekeishiya/skhd) (same developer) for several months now (hotkey daemon for yabai).  
-Sadly it breaks on a regular basis (stops working after a few hours of running mac os) -> requires restarts
+~~I tried to use~~ I use [skhd](https://github.com/koekeishiya/skhd) (same developer) ~~for several months now~~ (hotkey daemon for yabai) again.  
+~~Sadly it breaks on a regular basis (stops working after a few hours of running mac os) -> requires restarts~~
 
-`skhd` replacement:  
-[karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), [my yabai bindings](https://github.com/florianbegusch/dot-files/blob/4aac67e7e445274004db207451b0f39fe0b8a0ad/.config/karabiner/assets/complex_modifications/skhd-replacement-for-yabai.json)
+**Hint**: If `skhd` stops working -> check if `Input Monitoring` is allowed for the `skhd` executable in `Security & Privacy` Settings
+
+~~`skhd` replacement:~~  
+~~[karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), [my yabai bindings](https://github.com/florianbegusch/dot-files/blob/4aac67e7e445274004db207451b0f39fe0b8a0ad/.config/karabiner/assets/complex_modifications/skhd-replacement-for-yabai.json)~~
+>>>>>>> d850366 (Tiling window manager: karabiner-elements yabai bindings -> skhd again)
 
 ### Linux
 
