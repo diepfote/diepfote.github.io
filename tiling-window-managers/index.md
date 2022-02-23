@@ -5,18 +5,22 @@
 #### Window manager
 
 [Yabai](https://github.com/koekeishiya/yabai/) manages the Mac OS native Window manager:   
-[yabai config]()
+main config: [.yabairc](https://github.com/florianbegusch/dot-files/blob/1680d10bd9ccfe2071410cc933a6388715cafcb5/.yabairc)
 
-#### Hotkeys
+#### Hotkeys | Key bindings
 
-~~I tried to use~~ I use [skhd](https://github.com/koekeishiya/skhd) (same developer) ~~for several months now~~ (hotkey daemon for yabai) again.  
-~~Sadly it breaks on a regular basis (stops working after a few hours of running mac os) -> requires restarts~~
+#### skhd hotkey daemon
+I used to use [skhd](https://github.com/koekeishiya/skhd) (same developer as yabai), [.skhdrc keybindings](https://github.com/florianbegusch/dot-files/blob/cf154296e50119e8d06a1f2b8f45ebb4d6c594fd/.skhdrc).
+But I prefer to do keybinding rewrites in one place and one place only.
+Thus I wrote [custom keybindings](#karabiner-elements-keyboard-customizer-for-macos) for yabai in `Karabiner-Elements`.
 
 **Hint**: If `skhd` stops working -> check if `Input Monitoring` is allowed for the `skhd` executable in `Security & Privacy` Settings
 
-~~`skhd` replacement:~~  
-~~[karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), [my yabai bindings](https://github.com/florianbegusch/dot-files/blob/4aac67e7e445274004db207451b0f39fe0b8a0ad/.config/karabiner/assets/complex_modifications/skhd-replacement-for-yabai.json)~~
->>>>>>> d850366 (Tiling window manager: karabiner-elements yabai bindings -> skhd again)
+#### Karabiner-Elements
+[Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) a keyboard customizer for macOS
+
+`skhd` replacement:  
+> Custom written [yabai bindings](https://github.com/florianbegusch/dot-files/blob/4aac67e7e445274004db207451b0f39fe0b8a0ad/.config/karabiner/assets/complex_modifications/skhd-replacement-for-yabai.json)
 
 ### Linux
 
