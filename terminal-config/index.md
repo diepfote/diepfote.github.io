@@ -7,7 +7,7 @@ Florian Begusch's terminal config
 # [bash script & source-me collection](https://github.com/diepfote/scripts)
 ## [helpers in go](https://github.com/diepfote/golang-tools)
 * [source-me/bash-prompt.sh](https://github.com/diepfote/scripts/blob/3f150c0519b5ab020ac565aa5eebd2f471d057a9/source-me/bash-prompt.sh)
-  sets PS1 (tiny golang program, why? faster than a script -> fast REPL)  
+  sets PS1 (small golang program, why? faster than a script -> fast REPL)  
   and PROMPT_COMMAND (including `history` commands)
 * [additional history control settings](https://github.com/diepfote/dot-files/blob/277ae930cbaa9a9261c176d8d4f7622d0ede4076/.bashrc#L6-L13) left in `.bashrc`.  
 
