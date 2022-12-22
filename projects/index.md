@@ -17,5 +17,5 @@ Particularly useful if no-one officially published it to a podcasting platform.
 
 ## Mini projects
 
-[github gists](https://gist.github.com/search?q=user%3Aflorianbegusch+%22mini-project%22&ref=searchresults)
+[github gists](https://gist.github.com/search?q=user%3Adiepfote+%22mini-project%22&ref=searchresults)
 

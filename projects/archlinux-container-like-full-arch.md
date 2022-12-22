@@ -16,12 +16,12 @@ Commands below explicitly require these [Mac OS host mounts](https://github.com/
 
   ```
   $ (cd ~/Documents/scripts/ && git remote -v)
-  origin  git@github.com:florianbegusch/scripts (fetch)
-  origin  git@github.com:florianbegusch/scripts (push)
+  origin  git@github.com:diepfote/scripts (fetch)
+  origin  git@github.com:diepfote/scripts (push)
   ~/
   $ (cd ~/Documents/dockerfiles/ && git remote -v)
-  origin  git@github.com:florianbegusch/dockerfiles (fetch)
-  origin  git@github.com:florianbegusch/dockerfiles (push)
+  origin  git@github.com:diepfote/dockerfiles (fetch)
+  origin  git@github.com:diepfote/dockerfiles (push)
   ```
 
   [command](https://github.com/diepfote/scripts/blob/master/bin/build-container-image)  
