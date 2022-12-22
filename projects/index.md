@@ -1,6 +1,6 @@
-## Projects by Florian Begusch
+Projects by Florian Begusch
 
-### Full archlinux on Mac OS (docker container)
+# Full archlinux on Mac OS (docker container)
 
 Tries to resemble my personal archlinux system at home as close as possible.  
 VM and container runtime set up via `limactl` -> [limactl config](https://github.com/diepfote/dot-files/blob/master/.lima/default/lima.yaml).
@@ -39,17 +39,17 @@ Commands below explicitly require these [Mac OS host mounts](https://github.com/
 
   [command](https://github.com/diepfote/scripts/blob/master/bin/run_arch-all)
 
-### Mini projects
+# Mini projects
 
 [github gists](https://gist.github.com/search?q=user%3Aflorianbegusch+%22mini-project%22&ref=searchresults)
 
 
-### Youtube video-syncer
+## Youtube video-syncer
 
 [video-syncer](https://github.com/diepfote/golang-tools/tree/master/video-syncer)  
 Syncs youtube videos between 2 computers via text files.
 
-### Local podcast publisher  
+## Local podcast publisher  
 
 [local podcast publisher](https://github.com/diepfote/local-podcast-publisher)  
 Makes Podcasts available/downloadable on the local network.  

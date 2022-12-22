@@ -1,8 +1,8 @@
-## Florian Begusch's package manager helpers
+Florian Begusch's package manager helpers
 
-### Darwin / Mac OS - brew
+# Darwin / Mac OS - brew
 
-#### [brew formulae-require](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-formulae-require)
+## [brew formulae-require](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-formulae-require)
 
 What does `curl` depend on?
 ```
@@ -10,7 +10,7 @@ $ brew formulae-require curl
 curl: brotli ca-certificates gettext libidn2 libnghttp2 libssh2 libunistring openldap openssl@1.1 zstd
 ```
 
-#### [brew required-by](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-required-by)
+## [brew required-by](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-required-by)
   
 Which packages require `gettext`?
 
@@ -23,7 +23,7 @@ ffmpeg: aom bdw-gc brotli ca-certificates cairo cjson cmocka dav1d flac fontconf
 ...
 ```
 
-#### [brew leaves-require](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-leaves-require)
+## [brew leaves-require](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-leaves-require)
 
 Shows all dependencies for all leaf packages:
 
@@ -38,11 +38,11 @@ qemu: bdw-gc ca-certificates gdbm gettext glib gmp gnutls guile jpeg libevent li
 
 
 
-### Arch Linux - yay | pacman
+# Arch Linux - yay | pacman
 
-#### [yay-all](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/linux/yay-all)
+## [yay-all](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/linux/yay-all)
 
-- Downloads new official packages (runs `pacman -Syu`)
+- downloads new official packages (runs `pacman -Syu`)
 - then executes `yay -G <pkg-name` (updates PKGBUILD)
 - generates checksum for updated PKGBUILD to check if it matches manually generated checksum.
 - if it matches an automatic update is started (root privileges required, single time `sudo` approval)
@@ -50,11 +50,11 @@ qemu: bdw-gc ca-certificates gdbm gettext glib gmp gnutls guile jpeg libevent li
   afterwards it runs a normal `yay` upgrade and asks the user if he/she wants
   to upgrade the remaining packages
 
-#### [yay-generate-PKGBUILD-checksum](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/source-me/linux/posix-compliant-shells.sh#L289)
+## [yay-generate-PKGBUILD-checksum](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/source-me/linux/posix-compliant-shells.sh#L289)
 
-sublements `yay-all`, used to manually generated checksums for AUR PKGBUILDs
+sublements `yay-all`, used to manually generate checksums for AUR PKGBUILDs
 
-##### Why?  
+### Why?  
 
 PKGBUILDS contain checksum and pkg versions sections. These alter the checksum
 generated for a PKGBUILD anytime there is an update.
