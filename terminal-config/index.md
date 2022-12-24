@@ -39,4 +39,4 @@ Florian Begusch's terminal config
   * [linux only](https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179)
 
 # vim config
-[find here](https://github.com/diepfote/vim-config)
+[find here](https://github.com/diepfote/.vim)

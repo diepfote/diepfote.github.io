@@ -12,7 +12,7 @@ main config: [.yabairc](https://github.com/diepfote/dot-files/blob/1680d10bd9ccf
 ## skhd hotkey daemon
 I used to use [skhd](https://github.com/koekeishiya/skhd) (same developer as yabai), [.skhdrc keybindings](https://github.com/diepfote/dot-files/blob/cf154296e50119e8d06a1f2b8f45ebb4d6c594fd/.skhdrc).
 But I prefer to do keybinding rewrites in one place and one place only.
-Thus I wrote [custom keybindings](#karabiner-elements-keyboard-customizer-for-macos) for yabai in `Karabiner-Elements`.
+Thus I wrote [custom keybindings](#karabiner-elements) for yabai in `Karabiner-Elements`.
 
 **Hint**: If `skhd` stops working -> check if `Input Monitoring` is allowed for the `skhd` executable in `Security & Privacy` Settings
 
