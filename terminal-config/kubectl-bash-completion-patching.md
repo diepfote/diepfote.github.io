@@ -1,5 +1,11 @@
 # kubectl and oc bash completion patching
 
+#### Table of contents
+
+- [What does this do?](#what-does-this-do)
+- [Examples](#examples)
+- [Where to find](#where-to-find)
+
 ## What does this do?
 
 Includes `krew plugins` and [my own kubectl plugins](https://github.com/diepfote/scripts/tree/master/kubernetes/bin) in root command completion.

@@ -1,5 +1,17 @@
 Florian Begusch's tiling window managers config
 
+#### Table of contents
+
+1. [Darwin / Mac OS](#darwin--mac-os)
+    - [Window manager](#window-manager)
+    - [Hotkeys / Key bindings](#hotkeys--key-bindings)
+    - [skhd hotkey daemon](#skhd-hotkey-daemon)
+    - [Karabiner-Elements](#karabiner-elements)
+2. [Linux](#linux)
+    - [Main config](#main-config)
+    - [Statusbar config](#statusbar-config)
+
+
 # Darwin / Mac OS
 
 ## Window manager
@@ -7,7 +19,7 @@ Florian Begusch's tiling window managers config
 [Yabai](https://github.com/koekeishiya/yabai/) manages the Mac OS native Window manager:   
 main config: [.yabairc](https://github.com/diepfote/dot-files/blob/1680d10bd9ccfe2071410cc933a6388715cafcb5/.yabairc)
 
-## Hotkeys | Key bindings
+## Hotkeys / Key bindings
 
 ## skhd hotkey daemon
 I used to use [skhd](https://github.com/koekeishiya/skhd) (same developer as yabai), [.skhdrc keybindings](https://github.com/diepfote/dot-files/blob/cf154296e50119e8d06a1f2b8f45ebb4d6c594fd/.skhdrc).

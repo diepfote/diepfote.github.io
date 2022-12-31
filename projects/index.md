@@ -1,5 +1,13 @@
 Projects by Florian Begusch
 
+#### Table of contents
+
+- [Youtube video-syncer](#youtube-video-syncer)
+- [Local podcast publisher](#local-podcast-publisher)
+- [Full archlinux on Mac OS (docker container)](#full-archlinux-on-mac-os-docker-container)
+- [Mini projects](#mini-projects)
+
+
 ## Youtube video-syncer
 
 [video-syncer](https://github.com/diepfote/golang-tools/tree/master/video-syncer)  

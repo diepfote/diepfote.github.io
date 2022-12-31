@@ -1,5 +1,17 @@
 Florian Begusch's terminal config
 
+#### Table of contents
+
+- [dot-files](#dot-files)
+- [bash script & source-me collection](#bash-script--source-me-collection)
+    * [helpers in go](#helpers-in-go)
+    * [helpers in python](#helpers-in-python)
+        - [kubectl and oc bash completion patching  ](#kubectl-and-oc-bash-completion-patching)
+        - [miscellaneous](#miscellaneous)
+- [git](#git)
+- [vim config](#vim-config)
+
+
 ## dot-files
 
 [find here](https://github.com/diepfote/dot-files)

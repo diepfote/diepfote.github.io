@@ -1,5 +1,17 @@
 Florian Begusch's package manager helpers
 
+#### Table of contents
+
+1. [Darwin / Mac OS - brew](#darwin--mac-os---brew)
+    - [brew formulae-require](#brew-formulae-require)
+    - [brew required-by](#brew-required-by)
+    - [brew leaves-require](#brew-leaves-require)
+2. [Arch Linux - yay and pacman](#arch-linux---yay-and-pacman)
+    - [yay-all](#yay-all)
+    - [yay-generate-PKGBUILD-checksum](#yay-generate-pkgbuild-checksum)
+        * [Why?  ](#why)
+
+
 # Darwin / Mac OS - brew
 
 ## brew formulae-require
@@ -44,7 +56,7 @@ qemu: bdw-gc ca-certificates gdbm gettext glib gmp gnutls guile jpeg libevent li
 
 
 
-# Arch Linux - yay | pacman
+# Arch Linux - yay and pacman
 
 ## yay-all
 
