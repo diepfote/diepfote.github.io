@@ -24,19 +24,22 @@ Thus I wrote [custom keybindings](#karabiner-elements) for yabai in `Karabiner-E
 
 # Linux
 
-I use i3-gaps. Config can be found in the sections below 
+I use [i3-gaps](https://github.com/Airblader/i3) (i3-gaps will be merged to i3 in v4.22).
+Config can be found in the sections below 
 
 ## Main config
 
-Hotkeys and workspace (virtual desktops) config; sets statusbar helper to `i3cat`
+This config sets hotkeys and workspace (virtual desktops) config.
+It also sets a statusbar helper, [`i3cat`](https://vincent-petithory.github.io/i3cat/).
+The main config can be found [here](https://github.com/diepfote/dot-files/blob/79ab2e985900f60888de119171d02056c4f29231/.config/i3/config).
 
-* [main i3 config](https://github.com/diepfote/dot-files/blob/79ab2e985900f60888de119171d02056c4f29231/.config/i3/config)
-* [i3 startup via .xinitrc](https://github.com/diepfote/dot-files/blob/61fc984f9b7f332503755766a46bc5a84a58ff04/.xinitrc)
+i3 startup is handled via `.xinitrc`. This config lives [here](https://github.com/diepfote/dot-files/blob/61fc984f9b7f332503755766a46bc5a84a58ff04/.xinitrc).
 
 ## Statusbar config
 
-[i3cat config](https://github.com/diepfote/dot-files/blob/011fa649ff02a2e470b3e495a903e65fc891c72f/.config/i3cat/config)
+* Uses [`i3cat`](https://vincent-petithory.github.io/i3cat/)
+* Find `i3cat` config [here](https://github.com/diepfote/dot-files/blob/011fa649ff02a2e470b3e495a903e65fc891c72f/.config/i3cat/config)
+* ^ this config uses two [i3status](https://i3wm.org/i3status/manpage.html) processes and a [separate script](https://github.com/diepfote/scripts/blob/91f7ac81f969e8158aedb6dea6662eefeead2a8c/i3cat-audio-device-helper.sh) to display audio levels.
+Those `i3status` configs can be found [here](https://github.com/diepfote/dot-files/tree/b45e108a685225bdecd0dd2bd89f5beaf0ca45b9/.config/i3status).
 
-My `i3cat` config incorporates two `i3status` configs, among other things:  
-  [i3 status configs](https://github.com/diepfote/dot-files/tree/b45e108a685225bdecd0dd2bd89f5beaf0ca45b9/.config/i3status)
 
