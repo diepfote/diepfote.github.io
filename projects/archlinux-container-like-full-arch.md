@@ -11,20 +11,7 @@ Commands below explicitly require these [Mac OS host mounts](https://github.com/
   build-container-image arch-all
   ```
 
-  The command makes strong assumptions about 2 git repo
-  folder locations:
-
-  ```
-  $ (cd ~/Documents/scripts/ && git remote -v)
-  origin  git@github.com:diepfote/scripts (fetch)
-  origin  git@github.com:diepfote/scripts (push)
-  ~/
-  $ (cd ~/Documents/dockerfiles/ && git remote -v)
-  origin  git@github.com:diepfote/dockerfiles (fetch)
-  origin  git@github.com:diepfote/dockerfiles (push)
-  ```
-
-  [command](https://github.com/diepfote/scripts/blob/master/bin/build-container-image)  
+  [command](https://github.com/diepfote/dockerfiles/blob/master/bin/build-container-image)  
   [Dockerfile etc.](https://github.com/diepfote/dockerfiles/tree/master/arch-all)
 
 * running the container
@@ -33,9 +20,7 @@ Commands below explicitly require these [Mac OS host mounts](https://github.com/
   run_arch-all
   ```
 
-  Hint: see build process for required git repos
-
-  [command](https://github.com/diepfote/scripts/blob/master/bin/run_arch-all)
+  [command](https://github.com/diepfote/dockerfiles/blob/master/bin/run_arch-all)
 
 
 ---
