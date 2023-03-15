@@ -4,10 +4,10 @@ Florian Begusch's terminal config
 
 - [dot-files](#dot-files)
 - [bash script & source-me collection](#bash-script--source-me-collection)
-    * [helpers in go](#helpers-in-go)
-    * [helpers in python](#helpers-in-python)
-        - [extend kubectl bash completions/extend oc bash completions](#kubectl-and-oc-bash-completion-patching)
-        - [miscellaneous](#miscellaneous)
+- [bash helpers in go](#bash-helpers-in-go)
+- [bash helpers in python](#bash-helpers-in-python)
+    - [extend kubectl bash completions/extend oc bash completions](#extend-kubectl-bash-completions)
+    - [miscellaneous](#miscellaneous)
 - [git](#git)
 - [vim config](#vim-config)
 
@@ -23,7 +23,7 @@ Florian Begusch's terminal config
 
 [find here](https://github.com/diepfote/scripts)
 
-### helpers in go
+## bash helpers in go
 
 [find here](https://github.com/diepfote/golang-tools)
 * [source-me/bash-prompt.sh](https://github.com/diepfote/scripts/blob/3f150c0519b5ab020ac565aa5eebd2f471d057a9/source-me/bash-prompt.sh)
@@ -31,15 +31,15 @@ Florian Begusch's terminal config
   and PROMPT_COMMAND (including `history` commands)
 * [additional history control settings](https://github.com/diepfote/dot-files/blob/277ae930cbaa9a9261c176d8d4f7622d0ede4076/.bashrc#L6-L13) left in `.bashrc`.  
 
-### helpers in python
+## bash helpers in python
 
 [find here](https://github.com/diepfote/python-tools)
 
-#### kubectl and oc bash completion patching  
+### extend kubectl bash completions
 
 [find here](./kubectl-bash-completion-patching.html)
 
-#### miscellaneous
+### miscellaneous
 * [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/master/show-ics.py)
 * [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/master/convert_gummi_snippets_to_gedit_snippets.py)
 
