@@ -6,7 +6,7 @@ Florian Begusch's terminal config
 - [bash script & source-me collection](#bash-script--source-me-collection)
     * [helpers in go](#helpers-in-go)
     * [helpers in python](#helpers-in-python)
-        - [kubectl and oc bash completion patching  ](#kubectl-and-oc-bash-completion-patching)
+        - [extend kubectl bash completions/extend oc bash completions](#kubectl-and-oc-bash-completion-patching)
         - [miscellaneous](#miscellaneous)
 - [git](#git)
 - [vim config](#vim-config)

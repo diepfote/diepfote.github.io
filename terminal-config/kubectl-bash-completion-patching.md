@@ -1,4 +1,6 @@
-# kubectl and oc bash completion patching
+# Extend kubectl bash completions/extend oc bash completions
+
+e.g. add bash completions for krew plugins
 
 #### Table of contents
 
