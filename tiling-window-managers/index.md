@@ -36,8 +36,14 @@ Thus I wrote [custom keybindings](#karabiner-elements) for yabai in `Karabiner-E
 
 # Linux
 
-I use [i3-gaps](https://github.com/Airblader/i3) (i3-gaps will be merged to i3 in v4.22).
+I use [i3](https://github.com/Airblader/i3).
 Config can be found in the sections below 
+
+--
+
+What it looks like
+
+<img src="./i3-example.png" width="600" />
 
 ## Main config
 
