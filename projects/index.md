@@ -1,4 +1,4 @@
-Projects by Florian Begusch
+Projects by Florian Sorko
 
 #### Table of contents
 

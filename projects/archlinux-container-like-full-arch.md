@@ -25,4 +25,4 @@ Commands below explicitly require these [Mac OS host mounts](https://github.com/
 
 ---
 
-by Florian Begusch
+by Florian Sorko

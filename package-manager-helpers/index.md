@@ -1,4 +1,4 @@
-Florian Begusch's package manager helpers
+Florian Sorko's package manager helpers
 
 #### Table of contents
 

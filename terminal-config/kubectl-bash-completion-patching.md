@@ -72,4 +72,4 @@ openshift-logging
 
   ---
 
-  by Florian Begusch
+  by Florian Sorko

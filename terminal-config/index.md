@@ -1,4 +1,4 @@
-Florian Begusch's terminal config
+Florian Sorko's terminal config
 
 #### Table of contents
 

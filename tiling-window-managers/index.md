@@ -1,4 +1,4 @@
-Florian Begusch's tiling window managers config
+Florian Sorko's tiling window managers config
 
 #### Table of contents
 

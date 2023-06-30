@@ -1,4 +1,4 @@
-## Projects, Configs, Cheatsheets by Florian Begusch
+## Projects, Configs, Cheatsheets by Florian Sorko
 
 * ### [projects](./projects/index.html)
 * ### [cheatsheets](./cheatsheets)
