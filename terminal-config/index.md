@@ -25,11 +25,19 @@ Florian Sorko's terminal config
 
 ## bash helpers in go
 
-[find here](https://github.com/diepfote/golang-tools)
+I use them in tmux statusbar & pane & PS1 for bash. [find here](https://github.com/diepfote/golang-tools)
+
+Where I set them in bash:
+
 * [source-me/bash-prompt.sh](https://github.com/diepfote/scripts/blob/3f150c0519b5ab020ac565aa5eebd2f471d057a9/source-me/bash-prompt.sh)
   sets PS1 (small golang program, why? faster than a script -> fast REPL)  
   and PROMPT_COMMAND (including `history` commands)
 * [additional history control settings](https://github.com/diepfote/dot-files/blob/277ae930cbaa9a9261c176d8d4f7622d0ede4076/.bashrc#L6-L13) left in `.bashrc`.  
+
+Where I set them in tmux:
+
+* [pane-border](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L51)
+* [statusbar-right](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L44)
 
 ## bash helpers in python
 
@@ -42,6 +50,9 @@ Florian Sorko's terminal config
 ### miscellaneous
 * [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/show-ics.py)
 * [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/convert_gummi_snippets_to_gedit_snippets.py)
+* [read toml setting](https://github.com/diepfote/python-tools/blob/f8a4e088de5e0b4b1694229f0162015adc9259a9/read_toml_setting.py)
+* [urldecode/-encode](https://github.com/diepfote/python-tools/blob/5a79fd259c11ba860891b499a920e88b0fdda235/urlquoting.py)
+* [regex substitution](https://github.com/diepfote/python-tools/blob/9c13477200e1db17c8768a328e2699437baf856f/regex-substitute.py)
 
 
 ## git
@@ -51,4 +62,8 @@ Florian Sorko's terminal config
   * [linux only](https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179)
 
 ## vim config
+
 [find here](https://github.com/diepfote/.vim)
+* [Plain vimscript](https://github.com/diepfote/.vim/blob/5000aabd9f3374db411f756f1f7d37c092a542f2/vimrc)
+* [Plugin configuration and vimscript based on plugins](https://github.com/diepfote/.vim/blob/fa9c5cf84e1cf7530782229d262eacdda0fbdc52/plugins.vim)
+

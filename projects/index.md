@@ -32,7 +32,9 @@ Particularly useful if no-one officially published it to a podcasting platform.
 Installs all packages I have on my physical Arch Linux install.  
 The docker container approach is slow and some environment variables are
 messed up, thus I switched to this approach.  
-[full-fledged Arch Linux Lima VM](https://github.com/diepfote/dot-files/tree/60b4c1559ae2221a076e5f9ec286f1c99f36e695/.lima/default)
+[full-fledged Arch Linux Lima VM config](https://github.com/diepfote/dot-files/tree/60b4c1559ae2221a076e5f9ec286f1c99f36e695/.lima/default)  
+How I template the [jinja config](https://github.com/diepfote/scripts/blob/532c65847dc4e1181c1fd4da71aadbdad092b7a7/bin/darwin/limactl#L20) before starting the vm
+
 
 ## Arch Linux Docker Container like at HOME on Mac OS
 
