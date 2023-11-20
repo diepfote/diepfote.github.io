@@ -5,8 +5,6 @@ Florian Sorko's tiling window managers config
 1. [Darwin / Mac OS](#darwin--mac-os)
     - [Window manager](#window-manager)
     - [Hotkeys / Key bindings](#hotkeys--key-bindings)
-    - [skhd hotkey daemon](#skhd-hotkey-daemon)
-    - [Karabiner-Elements](#karabiner-elements)
 2. [Linux](#linux)
     - [Main config](#main-config)
     - [Statusbar config](#statusbar-config)
@@ -16,23 +14,13 @@ Florian Sorko's tiling window managers config
 
 ## Window manager
 
-[Yabai](https://github.com/koekeishiya/yabai/) manages the Mac OS native Window manager:   
-main config: [.yabairc](https://github.com/diepfote/dot-files/blob/1680d10bd9ccfe2071410cc933a6388715cafcb5/.yabairc)
+I used to use skhd + yabai but this requires security "downgrades" on Mac OS.
+I have since switched to [Amethyst](https://ianyh.com/amethyst/). Make no mistake,
+this is no i3 but [yabai](https://github.com/koekeishiya/yabai) never was either.
 
 ## Hotkeys / Key bindings
 
-## skhd hotkey daemon
-I used to use [skhd](https://github.com/koekeishiya/skhd) (same developer as yabai), [.skhdrc keybindings](https://github.com/diepfote/dot-files/blob/cf154296e50119e8d06a1f2b8f45ebb4d6c594fd/.skhdrc).
-But I prefer to do keybinding rewrites in one place and one place only.
-Thus I wrote [custom keybindings](#karabiner-elements) for yabai in `Karabiner-Elements`.
-
-**Hint**: If `skhd` stops working -> check if `Input Monitoring` is allowed for the `skhd` executable in `Security & Privacy` Settings
-
-## Karabiner-Elements
-[Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) a keyboard customizer for macOS
-
-`skhd` replacement:  
-> Custom written [yabai bindings](https://github.com/diepfote/dot-files/blob/4aac67e7e445274004db207451b0f39fe0b8a0ad/.config/karabiner/assets/complex_modifications/skhd-replacement-for-yabai.json)
+[Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) a keyboard customizer for macOS.
 
 # Linux
 
