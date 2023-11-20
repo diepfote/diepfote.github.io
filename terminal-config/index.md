@@ -16,7 +16,7 @@ Florian Sorko's terminal config
 
 [find here](https://github.com/diepfote/dot-files)
 
-* [tmux config](https://github.com/diepfote/dot-files/blob/master/.tmux.conf)
+* [tmux config](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf)
 * ... and anything else not in my bash script collection
 
 ## bash script & source-me collection
@@ -40,8 +40,8 @@ Florian Sorko's terminal config
 [find here](./kubectl-bash-completion-patching.html)
 
 ### miscellaneous
-* [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/master/show-ics.py)
-* [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/master/convert_gummi_snippets_to_gedit_snippets.py)
+* [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/show-ics.py)
+* [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/convert_gummi_snippets_to_gedit_snippets.py)
 
 
 ## git
