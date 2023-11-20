@@ -2,11 +2,12 @@ Florian Sorko's package manager helpers
 
 #### Table of contents
 
-1. [Darwin / Mac OS - brew](#darwin--mac-os---brew)
+1. [Brew](#darwin--mac-os---brew)
     - [brew formulae-require](#brew-formulae-require)
     - [brew required-by](#brew-required-by)
     - [brew leaves-require](#brew-leaves-require)
-2. [Arch Linux - yay and pacman](#arch-linux---yay-and-pacman)
+2. [Yay and Pacman](#arch-linux---yay-and-pacman)
+    - [Pacman Throttle Bandwidth](#pacman-throttle-bandwidth)
     - [yay-all](#yay-all)
     - [yay-generate-PKGBUILD-checksum](#yay-generate-pkgbuild-checksum)
         * [Why?  ](#why)
@@ -57,6 +58,19 @@ qemu: bdw-gc ca-certificates gdbm gettext glib gmp gnutls guile jpeg libevent li
 
 
 # Arch Linux - yay and pacman
+
+## Pacman Throttle Bandwidth
+
+If you are on a slow internet connection and you do not want to break
+internet access for anyone else on the network (or yourself for that matter)
+you need to throttle `pacman` and `yay`.  
+This is why I wrap both commands. They are throttled or unthrottled based on
+the file `/tmp/pacman-bandwidth-limit`.
+
+* [`pacman`](https://github.com/diepfote/scripts/blob/1db0a8c5715fdba6897987422d7725f50de8fdd8/bin/linux/pacman#L65-L72)
+* [`yay`](https://github.com/diepfote/scripts/blob/8b597bb25948b2aebba4643834e7cb49b3ff45af/bin/linux/yay#L48-L55)
+
+This is implemented via [trickle](https://github.com/mariusae/trickle).
 
 ## yay-all
 
