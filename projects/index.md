@@ -27,6 +27,11 @@ Uses functionality found in [video-syncer](#youtube-video-syncer) and [report-vi
 Makes Podcasts available/downloadable on the local network.  
 Particularly useful if no-one officially published it to a podcasting platform.
 
+Note: it uses the following `ffprobe` and `ffmpeg` helpers:
+
+* [ffprobe](https://github.com/search?q=repo%3Adiepfote%2Fscripts+ffprobe&type=code)
+* [ffmpeg](https://github.com/search?q=repo%3Adiepfote%2Fscripts%20ffmpeg&type=code)
+
 ## Arch Linux VM like at HOME on Mac OS
 
 Installs all packages I have on my physical Arch Linux install.  
@@ -41,6 +46,9 @@ How I template the [jinja config](https://github.com/diepfote/scripts/blob/532c6
 Installs all packages I have on my physical Arch Linux install.  
 [check here](./archlinux-container-like-full-arch.html)
 
+## Vim plugins
+
+* [Primitive yaml sort](https://github.com/diepfote/vim-primitive-yamlsort)
 
 ## Mini projects
 
