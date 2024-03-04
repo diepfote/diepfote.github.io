@@ -51,6 +51,11 @@ Installs all packages I have on my physical Arch Linux install.
 * [Primitive yaml sort](https://github.com/diepfote/vim-primitive-yamlsort)
 
 
+## Mini projects
+
+[github gists](https://gist.github.com/search?q=user%3Adiepfote+%22mini-project%22&ref=searchresults)
+
+
 ## Kubectl Completion Patching
 
 What does it do?
@@ -62,8 +67,4 @@ Lattermost I use to cache `namespaces` if the `$KUBECONFIG` is unmodified.
 This way if I hit `<TAB>` after `-n` I receive suggestions without delay.
 
 For more details [click](../terminal-config/kubectl-bash-completion-patching.html)
-
-## Mini projects
-
-[github gists](https://gist.github.com/search?q=user%3Adiepfote+%22mini-project%22&ref=searchresults)
 
