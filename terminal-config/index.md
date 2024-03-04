@@ -21,6 +21,10 @@ Florian Sorko's terminal config
 
 ## bash script & source-me collection
 
+Examples
+
+<img src="./script-examples.png" width="600" />
+
 [find here](https://github.com/diepfote/scripts)
 
 ## bash helpers in go
