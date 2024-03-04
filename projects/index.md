@@ -8,7 +8,7 @@ Projects by Florian Sorko
 - [Arch Linux VM like at HOME on Mac OS](#arch-linux-vm-like-at-home-on-mac-os)
 - [Arch Linux Docker Container like at HOME on Mac OS](#arch-linux-docker-container-like-at-home-on-mac-os)
 - [Mini projects](#mini-projects)
-
+- [Kubectl completion patching](#kubectl-completion-patching)
 
 ## Youtube video-syncer
 
@@ -49,6 +49,19 @@ Installs all packages I have on my physical Arch Linux install.
 ## Vim plugins
 
 * [Primitive yaml sort](https://github.com/diepfote/vim-primitive-yamlsort)
+
+
+## Kubectl Completion Patching
+
+What does it do?
+
+It allows you to add completions for custom written `kubectl`
+plugins, `krew` plugins and you can even modify how things like `namespaces`
+are completed.  
+Lattermost I use to cache `namespaces` if the `$KUBECONFIG` is unmodified.
+This way if I hit `<TAB>` after `-n` I receive suggestions without delay.
+
+For more details [click](../terminal-config/kubectl-bash-completion-patching.html)
 
 ## Mini projects
 
