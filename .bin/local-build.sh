@@ -16,6 +16,9 @@ mkdir "$temp"
 mkdir "$temp_docs"
 num_sec=500
 
+find -name '*.png' -exec sh -c 'mkdir -p '"$temp_docs"'/"$(dirname "$0")" && cp "$0" '"$temp_docs"'/"$0" ' {} \;
+find -name '*.jpg' -exec sh -c 'mkdir -p '"$temp_docs"'/"$(dirname "$0")" && cp "$0" '"$temp_docs"'/"$0" ' {} \;
+find -name '*.jpeg' -exec sh -c 'mkdir -p '"$temp_docs"'/"$(dirname "$0")" && cp "$0" '"$temp_docs"'/"$0" ' {} \;
 find -name '*.txt' -exec sh -c 'mkdir -p '"$temp_docs"'/"$(dirname "$0")" && cp "$0" '"$temp_docs"'/"$0" ' {} \;
 find -name '*.md' -exec sh -c 'mkdir -p '"$temp_docs"'/"$(dirname "$0")" && cp "$0" '"$temp_docs"'/"$0" ' {} \;
 cp mkdocs.yml "$temp"
