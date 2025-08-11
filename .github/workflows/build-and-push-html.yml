@@ -1,0 +1,49 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Copy files
+        run: |
+          mkdir /tmp/docs
+          find -name '*.txt' -exec sh -c 'mkdir -p /tmp/docs/"$(dirname "$0")" && cp "$0" /tmp/docs/"$0"' {} \;
+          find -name '*.md' -exec sh -c 'mkdir -p /tmp/docs/"$(dirname "$0")" && cp "$0" /tmp/docs/"$0"' {} \;
+          mv mkdocs.yml /tmp/
+
+      - name: Cleanup
+        run: |
+          rm -rf *
+
+          mv /tmp/docs .
+          mv /tmp/mkdocs.yml .
+
+      - name: Install mkdocs
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mkdocs
+
+      - name: Generate html
+        run: |
+          mkdocs build
+
+      - name: Publish site
+        run: |
+          cd site
+
+          grep -r -l -F 'edit/master/docs' | xargs sed -i -r 's#(edit/master/)docs/(.*)#\1\2#'
+
+          git init
+          git config user.name "GitHub Actions Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deployed via GitHub Actions :octocat:"
+          git push -f https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git master:"$DEPLOY_BRANCH"
+        env:
+          DEPLOY_BRANCH: gh-pages

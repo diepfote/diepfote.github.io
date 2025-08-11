@@ -1,0 +1,7 @@
+site_name: Florian Sorko
+site_description: ''
+site_author: 'Florian Sorko'
+repo_name: 'diepfote/diepfote.github.io'
+repo_url: 'https://github.com/diepfote/diepfote.github.io'
+theme:
+  name: 'readthedocs'
