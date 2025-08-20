@@ -52,6 +52,7 @@ Where I set them in tmux:
 [find here](./kubectl-bash-completion-patching.html)
 
 ### miscellaneous
+
 * [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/show-ics.py)
 * [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/convert_gummi_snippets_to_gedit_snippets.py)
 * [read toml setting](https://github.com/diepfote/python-tools/blob/f8a4e088de5e0b4b1694229f0162015adc9259a9/read_toml_setting.py)
@@ -60,6 +61,7 @@ Where I set them in tmux:
 
 
 ## git
+
 * [aliases](https://github.com/diepfote/dot-files/blob/a2e4b1cc6bfe470d1c75760cb59665fec2b5c1ca/.gitconfig#L13)
 * bash helpers
   * [general](https://github.com/diepfote/scripts/blob/3ac0081bbf178b4f9e630513e51c87bd8eee7527/source-me/posix-compliant-shells.sh#L589)
@@ -68,6 +70,7 @@ Where I set them in tmux:
 ## vim config
 
 [find here](https://github.com/diepfote/.vim)
+
 * [Plain vimscript](https://github.com/diepfote/.vim/blob/5000aabd9f3374db411f756f1f7d37c092a542f2/vimrc)
 * [Plugin configuration and vimscript based on plugins](https://github.com/diepfote/.vim/blob/fa9c5cf84e1cf7530782229d262eacdda0fbdc52/plugins.vim)
 
