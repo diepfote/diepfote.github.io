@@ -5,8 +5,6 @@ Projects by Florian Sorko
 - [Youtube video-syncer](#youtube-video-syncer)
 - [Sync MPV watch-later files](#sync-mpv-watch-later-files)
 - [Local podcast publisher](#local-podcast-publisher)
-- [Arch Linux VM like at HOME on Mac OS](#arch-linux-vm-like-at-home-on-mac-os)
-- [Arch Linux Docker Container like at HOME on Mac OS](#arch-linux-docker-container-like-at-home-on-mac-os)
 - [Mini projects](#mini-projects)
 - [Kubectl completion patching](#kubectl-completion-patching)
 - [Execute-on-files](#execute-on-files)
@@ -41,21 +39,6 @@ what is being said on a video/podcast I always run dynamic range
 compression before I add them to the podcast feed.
 
 
-
-## Arch Linux VM like at HOME on Mac OS
-
-Installs all packages I have on my physical Arch Linux install.  
-The docker container approach is slow and some environment variables are
-messed up, thus I switched to this approach.  
-[full-fledged Arch Linux Lima VM config](https://github.com/diepfote/dot-files/tree/60b4c1559ae2221a076e5f9ec286f1c99f36e695/.lima/default)  
-How I template the [jinja config](https://github.com/diepfote/scripts/blob/532c65847dc4e1181c1fd4da71aadbdad092b7a7/bin/darwin/limactl#L20) before starting the vm
-
-
-## Arch Linux Docker Container like at HOME on Mac OS
-
-Installs all packages I have on my physical Arch Linux install.  
-[check here](./archlinux-container-like-full-arch.html)
-
 ## Vim plugins
 
 * [Primitive yaml sort](https://github.com/diepfote/vim-primitive-yamlsort)
@@ -76,17 +59,17 @@ are completed.
 Lattermost I use to cache `namespaces` if the `$KUBECONFIG` is unmodified.
 This way if I hit `<TAB>` after `-n` I receive suggestions without delay.
 
-For more details [click](../terminal-config/kubectl-bash-completion-patching.html)
+For more details [click](../terminal-config/kubectl-bash-completion-patching/index.html)
 
 ## Execute-on-files
 
 Run arbitrary commands on files simultaneously/concurrently.
 
-For more details [click](./execute-on-files/index.html)
+For more details [click](https://github.com/diepfote/golang-tools/tree/621f347afe3196753d8df22daa120fa024d0fdf7/execute-on-files)
 
 ## Execute-in-repos
 
 Run arbitrary commands in git repos or plain old directories simultaneously/concurrently.
 
-For more details [click](./execute-in-repos/index.html)
+For more details [click](https://github.com/diepfote/golang-tools/tree/621f347afe3196753d8df22daa120fa024d0fdf7/execute-in-repos)
 
