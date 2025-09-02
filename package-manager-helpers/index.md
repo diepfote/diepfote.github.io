@@ -1,4 +1,4 @@
-Florian Sorko's package manager helpers
+Package manager helpers
 
 #### Table of contents
 

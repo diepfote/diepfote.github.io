@@ -1,4 +1,4 @@
-# Projects, Configs, Cheatsheets (Florian Sorko)
+# Projects, Configs, Cheatsheets
 
 * #### [projects](./projects/index.html)
 * #### [cheatsheets](./cheatsheets)

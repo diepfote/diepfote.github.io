@@ -1,4 +1,4 @@
-Projects by Florian Sorko
+Projects
 
 #### Table of contents
 

@@ -1,4 +1,4 @@
-Florian Sorko's tiling window managers config
+Tiling window managers config
 
 #### Table of contents
 
