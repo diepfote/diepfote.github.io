@@ -34,9 +34,10 @@ Note: it uses the following `ffprobe` and `ffmpeg` helpers:
 
 ### Dynamic range compression
 
+[download and drc a batch of files](https://github.com/diepfote/scripts/blob/939d8cde8284a62ac80ff3832c27add730d4b74c/source-me/posix-compliant-shells.sh#L443)  
 As I do not like to have my ears blown out or not be able to hear
-what is being said on a video/podcast I always run dynamic range 
-compression before I add them to the podcast feed.
+what is being said on in video/on podcast. 
+So I always run dynamic range compression before I add tracks to the podcast feed.
 
 
 ## Vim plugins
