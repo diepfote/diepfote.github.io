@@ -31,7 +31,7 @@ curl: brotli ca-certificates gettext libidn2 libnghttp2 libssh2 libunistring ope
   
 Which packages require `gettext`?
 
-*Hint*: Highlights package you were looking for in output (does not show here).
+*Hint*: Highlights the package you were looking for (not shown here).
 
 ```
 $ brew required-by gettext
@@ -78,22 +78,20 @@ This is implemented via [trickle](https://github.com/mariusae/trickle).
 
 - downloads new official packages (runs `pacman -Syu`)
 - then executes `yay -G <pkg-name` (updates PKGBUILD)
-- generates checksum for updated PKGBUILD to check if it matches manually generated checksum.
-- if it matches an automatic update is started (root privileges required, single time `sudo` approval)
-- it does this ^ for a list of packages defined in `pkgs_with_saved_checksums=()`;
-  afterwards it runs a normal `yay` upgrade and asks the user if he/she wants
-  to upgrade the remaining packages
+- generates a checksum for the updated PKGBUILD to check if it matches the manually generated checksum
+- if it matches it starts an automated update (root privileges required, single time sudo approval)
+- it does this ^ for a list of packages defined in `pkgs_with_saved_checksums=()`
+- afterwards it runs a normal `yay` upgrade and asks the user if he/she want to upgrade the remaining packages
 
 ## yay-generate-PKGBUILD-checksum
 
 [find here](https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/source-me/linux/posix-compliant-shells.sh#L289)
 
-sublements `yay-all`, used to manually generate checksums for AUR PKGBUILDs
+This supplements yay-all. It generates checksums for AUR PKGBUILDs.
 
 ### Why?  
 
-PKGBUILDS contain checksum and pkg versions sections. These alter the checksum
-generated for a PKGBUILD anytime there is an update.
-The point of this function/script is to not see checksum changes unless instructions
-in a given PKGBUILD change.
+A PKGBUILD contains a checksum and pkg version section. 
+These alter the checksum generated for a PKGBUILD anytime there is a version update.
+The point of this function/script is to ignore changes unless instructions in a given PKGBUILD change.
 
