@@ -11,18 +11,18 @@ Projects
 - [Execute-on-files](#execute-on-files)
 - [Execute-in-repos](#execute-in-repos)
 
-## Youtube video-syncer
+# Youtube video-syncer
 
 [video-syncer](https://github.com/diepfote/golang-tools/tree/32d62f7cad6f27d7c0503ba92907fee74f0a25b1/video-syncer)  
 Syncs youtube videos between 2 computers via text files.
 
-## Sync MPV watch-later files
+# Sync MPV watch-later files
 
 [sync-mpv-watch-later-files](https://github.com/diepfote/golang-tools/tree/7f86a2e32d83d6f09f6af758ed267eee826ddef6/sync-video-syncer-mpv-watch-later-files)  
 Syncs `~/.config/mpv/watch_later` or `~/.local/state/mpv/watch_later` directories between 2 computers.
 Uses functionality found in [video-syncer](#youtube-video-syncer) and [report-videos.sh](https://github.com/diepfote/scripts/blob/fc09c10453e8527e3fb53a3c379b128310c60b69/normal-privileges_systemd_scripts/report-videos.sh)
 
-## Local podcast publisher  
+# Local podcast publisher  
 
 [local podcast publisher](https://github.com/diepfote/local-podcast-publisher)  
 Makes Podcasts available/downloadable on the local network.  
@@ -41,7 +41,7 @@ what is being said on in video/on podcast.
 So I always run dynamic range compression before I add tracks to the podcast feed.
 
 
-## Vim plugins
+# Vim plugins
 
 ### Mine
 
@@ -53,12 +53,12 @@ So I always run dynamic range compression before I add tracks to the podcast fee
 * [yaml-vim](https://github.com/diepfote/yaml-vim)
 
 
-## Mini projects
+# Mini projects
 
 * [github gists](https://gist.github.com/search?q=user%3Adiepfote+%22mini-project%22&ref=searchresults)
 
 
-## Qiime2 Galaxy Wrappers
+# Qiime2 Galaxy Wrappers
 
 * Version: 2019.7
 * [repo](https://github.com/diepfote/qiime2_wrappers)
@@ -208,7 +208,7 @@ clustered_sequences : FeatureData[Sequence]
 
 </details></p>
 
-## Kubectl Completion Patching
+# Kubectl Completion Patching
 
 What does it do?
 
@@ -220,13 +220,13 @@ This way if I hit `<TAB>` after `-n` I receive suggestions without delay.
 
 For more details [click](../terminal-config/kubectl-bash-completion-patching/index.html)
 
-## Execute-on-files
+# Execute-on-files
 
 Run arbitrary commands on files simultaneously/concurrently.
 
 For more details [click](https://github.com/diepfote/golang-tools/tree/621f347afe3196753d8df22daa120fa024d0fdf7/execute-on-files)
 
-## Execute-in-repos
+# Execute-in-repos
 
 Run arbitrary commands in git repos or plain old directories simultaneously/concurrently.
 
