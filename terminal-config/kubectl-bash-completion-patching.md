@@ -10,14 +10,16 @@ e.g. add bash completions for krew plugins
 
 ## What does this do?
 
-Includes `krew plugins` and [my own kubectl plugins](https://github.com/diepfote/scripts/tree/ff979559100101fe7e824e83d2bda84a58a3ecc4/kubernetes/bin) in root command completion.
-It also provides custom completion for [my own kubectl plugins](https://github.com/diepfote/scripts/tree/ff979559100101fe7e824e83d2bda84a58a3ecc4/kubernetes/source-me).
+It includes `krew plugins` and [my kubectl plugins](https://github.com/diepfote/scripts/tree/ff979559100101fe7e824e83d2bda84a58a3ecc4/kubernetes/bin) in the root command completion.
+It also provides custom completions for each of [my kubectl plugins](https://github.com/diepfote/scripts/tree/ff979559100101fe7e824e83d2bda84a58a3ecc4/kubernetes/source-me).
 
 ## Examples
 
-*additional root commands in completion*
+### Additional root commands in completion
 
-```
+before:
+
+```text
 $ oc
 adm              auth             convert          diff             extract          label            new-project      port-forward     replace          scale            tag
 annotate         autoscale        cp               edit             get              login            observe          process          rollback         secrets          version
@@ -26,7 +28,10 @@ api-versions     cluster-info     debug            exec             image       
 apply            completion       delete           explain          import-image     new-app          plugin           proxy            rsync            start-build
 attach           config           describe         expose           kustomize        new-build        policy           registry         run              status
 ```
-```
+
+after:
+
+```text
 $ oc
 adm                                  delete                               kustomize                            policy                               serviceaccounts
 af-arbitrary-command                 delete-namespace-finalizer           label                                port-forward                         set
@@ -47,11 +52,9 @@ create                               images                               patch 
 debug                                import-image                         plugin                               secrets                              whoami
 ```
 
-*plugin commands option completion*
+### Option completion for custom plugins
 
 ```
-# yes I filtered which namespaces to display for this example
-
 $ kubectl watch-namespace -n
 openshift                          openshift-metrics-server
 openshift-console                  openshift-node
@@ -62,13 +65,5 @@ openshift-logging
 
 ## Where to find
 
-### kubectl completion patcher
-
-* [how to use](https://github.com/diepfote/dot-files/blob/4e18b3dce989972213431b57d096b3b6ca10d3d0/.bashrc#L124)  
-* where to find the [patch script](https://github.com/diepfote/python-tools/tree/146f57d759cb7ed26c6713c7eb1e1cf5be644654/kubectl-client)
-
-### oc completion patcher
-
-* [how to use](https://github.com/diepfote/dot-files/blob/4e18b3dce989972213431b57d096b3b6ca10d3d0/.bashrc#L137)  
-* where to find the [patch script](https://github.com/diepfote/python-tools/tree/f42b18945544c7648ce517ce1024ff213ed0d190/oc-client)
-
+* [kubectl completion patcher README](https://github.com/diepfote/python-tools/tree/146f57d759cb7ed26c6713c7eb1e1cf5be644654/kubectl-client)
+* [oc completion patcher README](https://github.com/diepfote/python-tools/tree/f42b18945544c7648ce517ce1024ff213ed0d190/oc-client)
