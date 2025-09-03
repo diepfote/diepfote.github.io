@@ -49,7 +49,7 @@ Where I set them in tmux:
 
 ### extend kubectl bash completions
 
-[find here](./kubectl-bash-completion-patching.html)
+[find here](./kubectl-bash-completion-patching/index.html)
 
 ### miscellaneous
 
