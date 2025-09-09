@@ -5,6 +5,7 @@ Projects
 - [Youtube video-syncer](#youtube-video-syncer)
 - [Sync MPV watch-later files](#sync-mpv-watch-later-files)
 - [Local podcast publisher](#local-podcast-publisher)
+- [Vim plugins](#vim-plugins)
 - [Mini projects](#mini-projects)
 - [Qiime2 Galaxy Wrappers](#qiime2-galaxy-wrappers)
 - [Kubectl completion patching](#kubectl-completion-patching)
