@@ -42,7 +42,7 @@ is harder to port between systems than aforementioned languages.
 
 * [repo](https://github.com/diepfote/golang-tools)
 
-### Use in tmux
+#### Use in tmux
 
 Pane-border now display the current git branch and if it is in sync with the upstream branch (based on the last `git fetch`).  
 Statusbar-right is used to display the current kubernetes cluster and openstack project.
@@ -58,13 +58,13 @@ do not care about speed or I need it now, I will write it in python.
 
 * [repo](https://github.com/diepfote/python-tools)
 
-### extend kubectl bash completions
+#### extend kubectl bash completions
 
 Kubectl does not provide functionality to add completions for
 plugins or hand-rolled `kubectl-X_Y_Z` extensions.  
 This is my [remedy](./kubectl-bash-completion-patching/index.html).
 
-### miscellaneous
+#### miscellaneous
 
 Here is a list of several things I needed or wanted to have
 that might be of interest:
@@ -87,14 +87,12 @@ This variable is used by bash to display e.g. the current path.
 
 ## git
 
-I decided to stick to plain git config for most functionality instead of writing separate bash helpers. The ones I use most often are `git find-commits-changed-file` and `git resubmit`.
-
-
-* [aliases](https://github.com/diepfote/dot-files/blob/a2e4b1cc6bfe470d1c75760cb59665fec2b5c1ca/.gitconfig#L13)
-* to edit the numerous git repos I use for my config I set up a bunch of bash functions to jump to these repos directly
-  * [general](https://github.com/diepfote/scripts/blob/3ac0081bbf178b4f9e630513e51c87bd8eee7527/source-me/posix-compliant-shells.sh#L589)
-  * [linux only](https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179)
-  * [autocompletion example](https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/completions_golang.sh)
+I decided to stick to plain git config for most functionality instead of writing separate bash helpers.
+The ones I use most often are `git find-commits-changed-file` and `git resubmit`: link to [aliases](https://github.com/diepfote/dot-files/blob/a2e4b1cc6bfe470d1c75760cb59665fec2b5c1ca/.gitconfig#L13)  
+To edit the numerous git repos I use for my config I set up a bunch of bash functions to jump to these repos directly: [general](https://github.com/diepfote/scripts/blob/3ac0081bbf178b4f9e630513e51c87bd8eee7527/source-me/posix-compliant-shells.sh#L589), [linux only](https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179)  
+All of these are autocompleted (if you hit tab it will provide a list of files in the actual repo, not the current directory).
+This is an [example](https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/completions_golang.sh)
+of how these completions are set up.
 
 ## vimscript
 
