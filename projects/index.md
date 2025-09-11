@@ -5,7 +5,7 @@ Projects
 - [Youtube video-syncer](#youtube-video-syncer)
 - [Sync MPV watch-later files](#sync-mpv-watch-later-files)
 - [Local podcast publisher](#local-podcast-publisher)
-- [Vim plugins](#vim-plugins)
+- [Vimscript](#vimscript)
 - [Mini projects](#mini-projects)
 - [Qiime2 Galaxy Wrappers](#qiime2-galaxy-wrappers)
 - [Kubectl completion patching](#kubectl-completion-patching)
@@ -42,17 +42,23 @@ what is being said on in video/on podcast.
 So I always run dynamic range compression before I add tracks to the podcast feed.
 
 
-# Vim plugins
+# Vimscript
+
+## Plugins
 
 ### Mine
 
-* [Primitive yaml sort](https://github.com/diepfote/vim-primitive-yamlsort)
+* [primitive-yaml-sort](https://github.com/diepfote/vim-primitive-yamlsort)
 
 ### Patched
 
 * [vim-checkbox](https://github.com/diepfote/vim-checkbox)
 * [yaml-vim](https://github.com/diepfote/yaml-vim)
 
+## Vim config (neovim only)
+
+* [.vim/plugins.vim](https://github.com/diepfote/.vim/blob/master/plugins.vim): plugins and if it depends on plugins
+* [.vim/vimrc](https://github.com/diepfote/.vim/blob/master/vimrc): plain vimscript
 
 # Mini projects
 
