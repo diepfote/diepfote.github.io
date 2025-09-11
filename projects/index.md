@@ -55,10 +55,15 @@ So I always run dynamic range compression before I add tracks to the podcast fee
 * [vim-checkbox](https://github.com/diepfote/vim-checkbox)
 * [yaml-vim](https://github.com/diepfote/yaml-vim)
 
-## Vim config (neovim only)
+## Neovim/Vim mappings and functions
 
-* [.vim/plugins.vim](https://github.com/diepfote/.vim/blob/master/plugins.vim): plugins and if it depends on plugins
-* [.vim/vimrc](https://github.com/diepfote/.vim/blob/master/vimrc): plain vimscript
+* [parrot.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L739)
+* [coc.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L47)
+* [vim-ReplaceWithRegister mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L418)
+* [visual copy to register mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L432)
+* [colorscheme handling](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L835)
+* [Base64 encoding/decoding](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L548)
+* [Yaml to json (and vice-versa)](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L620)
 
 # Mini projects
 
