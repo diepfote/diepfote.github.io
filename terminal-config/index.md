@@ -4,20 +4,26 @@ Terminal Config
 
 - [dot-files](#dot-files)
 - [bash script & source-me collection](#bash-script--source-me-collection)
-- [bash helpers in go](#bash-helpers-in-go)
-- [bash helpers in python](#bash-helpers-in-python)
+- [golang-tools](#golang-tools)
+- [rust-tools](#rust-tools)
+- [python-tools](#python-tools)
     - [extend kubectl bash completions/extend oc bash completions](#extend-kubectl-bash-completions)
     - [miscellaneous](#miscellaneous)
 - [git](#git)
-- [vim config](#vim-config)
+- [tmux](#tmux)
+- [vimscript](#vimscript)
 
 
 ## dot-files
 
-[find here](https://github.com/diepfote/dot-files)
+The config I use is split among several repos.
+The main config is the [dot-files repo](https://github.com/diepfote/dot-files).  
+It references the [scripts repo](#bash-script--source-me-collection) which in
+turn references the [python-tools](#python-tools), [golang-tools](#golang-tools)
+and [rust-tools](#rust-tools).
 
+* [repo](https://github.com/diepfote/dot-files)
 * [tmux config](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf)
-* ... and anything else not in my bash script collection
 
 ## bash script & source-me collection
 
@@ -25,33 +31,43 @@ Examples
 
 <img src="./script-examples.png" width="600" />
 
-[find here](https://github.com/diepfote/scripts)
+* [repo](https://github.com/diepfote/scripts)
 
-## bash helpers in go
+## golang-tools
 
-I use them in tmux statusbar & pane & PS1 for bash. [find here](https://github.com/diepfote/golang-tools)
+Tools were I care about speed are not written in bash or python.
+I instead tried go and zig and rust. For most of them I stuck to go.
+I never considered c++ as I am not a fan and abstained from c as it
+is harder to port between systems than aforementioned languages.
 
-Where I set them in bash:
+* [repo](https://github.com/diepfote/golang-tools)
 
-* [source-me/bash-prompt.sh](https://github.com/diepfote/scripts/blob/3f150c0519b5ab020ac565aa5eebd2f471d057a9/source-me/bash-prompt.sh)
-  sets PS1 (small golang program, why? faster than a script -> fast REPL)  
-  and PROMPT_COMMAND (including `history` commands)
-* [additional history control settings](https://github.com/diepfote/dot-files/blob/277ae930cbaa9a9261c176d8d4f7622d0ede4076/.bashrc#L6-L13) left in `.bashrc`.  
+### Use in tmux
 
-Where I set them in tmux:
+Pane-border now display the current git branch and if it is in sync with the upstream branch (based on the last `git fetch`).  
+Statusbar-right is used to display the current kubernetes cluster and openstack project.
 
 * [pane-border](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L51)
 * [statusbar-right](https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L44)
 
-## bash helpers in python
+## python-tools
 
-[find here](https://github.com/diepfote/python-tools)
+As I am intimately familiar with python it is my go to programming language.
+If the tasks cannot easily be accomplished in a scripting language and I
+do not care about speed or I need it now, I will write it in python.
+
+* [repo](https://github.com/diepfote/python-tools)
 
 ### extend kubectl bash completions
 
-[find here](./kubectl-bash-completion-patching/index.html)
+Kubectl does not provide functionality to add completions for
+plugins or hand-rolled `kubectl-X_Y_Z` extensions.  
+This is my [remedy](./kubectl-bash-completion-patching/index.html).
 
 ### miscellaneous
+
+Here is a list of several things I needed or wanted to have
+that might be of interest:
 
 * [display ics calender files in plaintext](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/show-ics.py)
 * [convert latex editor Gummi snippets to Gedit snippets](https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/convert_gummi_snippets_to_gedit_snippets.py)
@@ -59,18 +75,29 @@ Where I set them in tmux:
 * [urldecode/-encode](https://github.com/diepfote/python-tools/blob/5a79fd259c11ba860891b499a920e88b0fdda235/urlquoting.py)
 * [regex substitution](https://github.com/diepfote/python-tools/blob/9c13477200e1db17c8768a328e2699437baf856f/regex-substitute.py)
 
+## rust-tools
+
+So far I only wrote a bash helper. It displays the current PATH, .venv, colors them
+and shortens them so it is still readable if there are several tmux panes.  
+After trying go and then zig I decided to see if rust would be even faster for the task.
+I am sticking to it for now.  
+I override the PROMPT_COMMAND [here](https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/prompt.sh#L30).
+Thus, anytime you hit Enter the PROMPT_COMMAND will use the [_ps1](https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/prompt.sh#L30) function to set the `PS1` variable.
+This variable is used by bash to display e.g. the current path.
 
 ## git
 
+I decided to stick to plain git config for most functionality instead of writing separate bash helpers. The ones I use most often are `git find-commits-changed-file` and `git resubmit`.
+
+
 * [aliases](https://github.com/diepfote/dot-files/blob/a2e4b1cc6bfe470d1c75760cb59665fec2b5c1ca/.gitconfig#L13)
-* bash helpers
+* to edit the numerous git repos I use for my config I set up a bunch of bash functions to jump to these repos directly
   * [general](https://github.com/diepfote/scripts/blob/3ac0081bbf178b4f9e630513e51c87bd8eee7527/source-me/posix-compliant-shells.sh#L589)
   * [linux only](https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179)
+  * [autocompletion example](https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/completions_golang.sh)
 
-## vim config
+## vimscript
 
-[find here](https://github.com/diepfote/.vim)
-
-* [Plain vimscript](https://github.com/diepfote/.vim/blob/5000aabd9f3374db411f756f1f7d37c092a542f2/vimrc)
-* [Plugin configuration and vimscript based on plugins](https://github.com/diepfote/.vim/blob/fa9c5cf84e1cf7530782229d262eacdda0fbdc52/plugins.vim)
+Please refer to [projects in vimscript](../projects/index.html#vimscript).  
+My vim config: [repo](https://github.com/diepfote/.vim)
 

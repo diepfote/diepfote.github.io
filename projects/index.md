@@ -5,7 +5,8 @@ Projects
 - [Youtube video-syncer](#youtube-video-syncer)
 - [Sync MPV watch-later files](#sync-mpv-watch-later-files)
 - [Local podcast publisher](#local-podcast-publisher)
-- [Vimscript](#vimscript)
+- [Vim plugins](#vim-plugins)
+- [Vim mappings and functions](#vim-mappings-and-functions)
 - [Mini projects](#mini-projects)
 - [Qiime2 Galaxy Wrappers](#qiime2-galaxy-wrappers)
 - [Kubectl completion patching](#kubectl-completion-patching)
@@ -44,7 +45,7 @@ So I always run dynamic range compression before I add tracks to the podcast fee
 
 # Vimscript
 
-## Plugins
+## Vim Plugins
 
 ### Mine
 
@@ -55,7 +56,7 @@ So I always run dynamic range compression before I add tracks to the podcast fee
 * [vim-checkbox](https://github.com/diepfote/vim-checkbox)
 * [yaml-vim](https://github.com/diepfote/yaml-vim)
 
-## Neovim/Vim mappings and functions
+## Vim mappings and functions
 
 * [parrot.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L739)
 * [coc.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L47)
