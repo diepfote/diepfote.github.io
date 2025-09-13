@@ -37,8 +37,7 @@ What it looks like
 ## Main config
 
 This config sets hotkeys and workspace (virtual desktops) config.
-It also configures an i3 statusbar helper.
-
+It also configures an i3 statusbar helper.  
 The main config can be found [here](https://github.com/diepfote/dot-files/blob/79ab2e985900f60888de119171d02056c4f29231/.config/i3/config).
 
 *Sidenote*: i3 startup is handled via [.xinitrc](https://github.com/diepfote/dot-files/blob/61fc984f9b7f332503755766a46bc5a84a58ff04/.xinitrc)
@@ -47,6 +46,6 @@ The main config can be found [here](https://github.com/diepfote/dot-files/blob/7
 
 * The config uses an extra tool instead of plain `i3status`: [`i3cat`](https://vincent-petithory.github.io/i3cat/)
 * The main `i3cat` config lives [here](https://github.com/diepfote/dot-files/blob/011fa649ff02a2e470b3e495a903e65fc891c72f/.config/i3cat/config)
-* The config above uses two [i3status](https://i3wm.org/i3status/manpage.html) processes plus a [separate script](https://github.com/diepfote/scripts/blob/91f7ac81f969e8158aedb6dea6662eefeead2a8c/i3cat-audio-device-helper.sh) to display audio levels.
+* The config above uses two [i3status](https://i3wm.org/i3status/manpage.html) processes plus a [separate script](https://github.com/diepfote/scripts/blob/91f7ac81f969e8158aedb6dea6662eefeead2a8c/i3cat-audio-device-helper.sh) to display audio levels
 * The config for those `i3status` processes can be found [here](https://github.com/diepfote/dot-files/tree/b45e108a685225bdecd0dd2bd89f5beaf0ca45b9/.config/i3status).
 
