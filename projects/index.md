@@ -58,13 +58,14 @@ So I always run dynamic range compression before I add tracks to the podcast fee
 
 ## Vim mappings and functions
 
-* [parrot.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L739)
-* [coc.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L47)
-* [vim-ReplaceWithRegister mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L418)
-* [visual copy to register mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L432)
-* [colorscheme handling](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L835)
-* [Base64 encoding/decoding](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L548)
-* [Yaml to json (and vice-versa)](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L620)
+* [parrot.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L739): a llm chat plugin
+* [coc.nvim mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L47): a language server plugin
+* [vim-ReplaceWithRegister mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L418): a plugin to simplify text replacement
+* [visual copy to register mappings](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L432): functions and mappings to simplify text yanking/copying
+* [colorscheme handling](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/plugins.vim#L835): ensure your colorscheme uses light!
+* [Base64 encoding/decoding](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L548): encode/decode your selection or the entire file
+* [Yaml to json (and vice-versa)](https://github.com/diepfote/.vim/blob/8c0299bb77086468e39853a8ee69ca304c1dbf75/vimrc#L620): convert your selection or the entire file
+
 
 # Mini projects
 
