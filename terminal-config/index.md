@@ -89,6 +89,8 @@ Here is a list of several things I needed or wanted to have:
 
 # rust-tools
 
+[repo](https://github.com/diepfote/rust-tools)
+
 So far I only wrote a bash helper. It displays the current PATH and active .venv.
 It then colors and shortens them so they are still readable if there are several tmux panes.  
 After trying go and zig I decided to see if rust would be even faster for the task.
