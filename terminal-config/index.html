@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Florian Sorko">
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Index - Florian Sorko</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Index";
+    var mkdocs_page_input_path = "terminal-config/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Florian Sorko</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Projects, Configs, Cheatsheets</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package manager helpers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../package-manager-helpers/">Index</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../projects/">Index</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Terminal config</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Index</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="kubectl-bash-completion-patching/">Extend kubectl bash completions/extend oc bash completions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tiling window managers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tiling-window-managers/">Index</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Florian Sorko</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Terminal config &raquo;</li>
+        
+      
+    
+    <li>Index</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/diepfote/diepfote.github.io/edit/master/terminal-config/index.md"> Edit on diepfote/diepfote.github.io</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Terminal Config</p>
+<h4 id="table-of-contents">Table of contents</h4>
+<ul>
+<li><a href="#dot-files">dot-files</a></li>
+<li><a href="#bash-script--source-me-collection">bash script &amp; source-me collection</a></li>
+<li><a href="#golang-tools">golang-tools</a><ul>
+<li><a href="#use-in-tmux">use in tmux</a></li>
+</ul>
+</li>
+<li><a href="#rust-tools">rust-tools</a></li>
+<li><a href="#python-tools">python-tools</a><ul>
+<li><a href="#extend-kubectl-bash-completions">extend kubectl bash completions/extend oc bash completions</a></li>
+<li><a href="#miscellaneous">miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#vimscript">vimscript</a></li>
+<li><a href="#git">git</a><ul>
+<li><a href="#git-resubmit">git resubmit</a></li>
+<li><a href="#git-get-upstream">git get-upstream</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="dot-files">dot-files</h1>
+<p>The config I use is split among several repos.
+The main config resides in the <a href="https://github.com/diepfote/dot-files">dot-files repo</a>.<br />
+It references the <a href="#bash-script--source-me-collection">scripts repo</a> which in
+turn references the <a href="#python-tools">python-tools</a>, <a href="#golang-tools">golang-tools</a>
+and <a href="#rust-tools">rust-tools</a> repos.</p>
+<ul>
+<li><a href="https://github.com/diepfote/dot-files">repo</a></li>
+<li><a href="https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf">tmux config</a></li>
+</ul>
+<h1 id="bash-script-source-me-collection">bash script &amp; source-me collection</h1>
+<p><a href="https://github.com/diepfote/scripts">repo</a></p>
+<p>This repo contains the following in the root of the repository:</p>
+<ul>
+<li>general scripts that will be referenced directly (not on the PATH): An example would be the <code>i3cat-audio-device-helper.sh</code> for my <a href="../tiling-window-managers/index.html#statusbar-config">i3 config</a>.</li>
+<li>scripts for use in PATH in the <code>bin/</code> folder</li>
+<li>files in the <code>source-me/</code> folder that are meant to be used with <code>source &lt;file&gt;</code>:  completion config, functions rather than executables, aliases and global variables</li>
+<li><a href="https://github.com/diepfote/scripts/tree/852787d5968e0c3b58826fd855e30635729d473b/kubernetes">kubernetes plugins (etc)</a> in <code>kubernetes/</code></li>
+</ul>
+<h3 id="bin">bin</h3>
+<p>Scripts used as wrappers (e.g. git wrapper) or additional executables.<br />
+The <code>bin/</code> folder contains additional folders for
+executables that might not want to be used on every system.
+It distinguishes between Mac OS and Linux.</p>
+<p><img src="./script-examples.png" width="600" /></p>
+<h1 id="golang-tools">golang-tools</h1>
+<p><a href="https://github.com/diepfote/golang-tools">repo</a></p>
+<p>Tools where I care about speed are not written in bash or python.
+I instead tried go, zig and rust. For most of them I stuck to go.
+I never considered c++ as I am not a fan and abstained from c as it
+is harder to port between systems than aforementioned languages.</p>
+<h4 id="use-in-tmux">Use in tmux</h4>
+<p>Pane-border now displays the current git branch and whether it is in sync with the upstream branch (based on the last <code>git fetch</code>).<br />
+Statusbar-right is used to display the current kubernetes cluster and openstack project.</p>
+<ul>
+<li><a href="https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L51">pane-border</a></li>
+<li><a href="https://github.com/diepfote/dot-files/blob/aed558943e888cc6b32eacdb9f64ca687f358869/.tmux.conf#L44">statusbar-right</a></li>
+</ul>
+<h1 id="python-tools">python-tools</h1>
+<p><a href="https://github.com/diepfote/python-tools">repo</a></p>
+<p>As I am intimately familiar with python it is my go to programming language.
+If the tasks cannot be accomplished in a scripting language easily and I
+do not care about speed or I need it now, I will write it in python.</p>
+<h4 id="extend-kubectl-bash-completions">extend kubectl bash completions</h4>
+<p>Kubectl does not provide functionality to add completions for
+<a href="https://krew.sigs.k8s.io/plugins/">krew plugings</a> or <a href="https://github.com/diepfote/scripts/tree/852787d5968e0c3b58826fd855e30635729d473b/kubernetes/bin">hand-rolled plugins</a> (<code>kubectl-x_y_z</code> executable files). 
+This is my <a href="./kubectl-bash-completion-patching/index.html">remedy</a>.</p>
+<h4 id="miscellaneous">miscellaneous</h4>
+<p>Here is a list of several things I needed or wanted to have: </p>
+<ul>
+<li><a href="https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/show-ics.py">display ics calender files in plaintext</a></li>
+<li><a href="https://github.com/diepfote/python-tools/blob/2fef3537b26f8ce2b3019797460f5debbe9e17c4/convert_gummi_snippets_to_gedit_snippets.py">convert latex editor Gummi snippets to Gedit snippets</a></li>
+<li><a href="https://github.com/diepfote/python-tools/blob/f8a4e088de5e0b4b1694229f0162015adc9259a9/read_toml_setting.py">read toml setting</a></li>
+<li><a href="https://github.com/diepfote/python-tools/blob/5a79fd259c11ba860891b499a920e88b0fdda235/urlquoting.py">urldecode/-encode</a></li>
+<li><a href="https://github.com/diepfote/python-tools/blob/9c13477200e1db17c8768a328e2699437baf856f/regex-substitute.py">regex substitution</a></li>
+</ul>
+<h1 id="rust-tools">rust-tools</h1>
+<p><a href="https://github.com/diepfote/rust-tools">repo</a></p>
+<p>So far I only wrote a bash helper. It displays the current PATH and active .venv.
+It then colors and shortens them so they are still readable if there are several tmux panes.<br />
+After trying go and zig I decided to see if rust would be even faster for the task.
+I am sticking to it for now.<br />
+I override the PROMPT_COMMAND <a href="https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/prompt.sh#L30">here</a>.
+Thus, anytime you hit Enter the PROMPT_COMMAND will use the <a href="https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/prompt.sh#L30">_ps1</a> function to set the <code>PS1</code> variable.
+This variable is used by bash to display information on every prompt e.g. the current path.</p>
+<h1 id="vimscript">vimscript</h1>
+<p>Please refer to <a href="../projects/index.html#vimscript">projects in vimscript</a>.<br />
+My vim config: <a href="https://github.com/diepfote/.vim">repo</a></p>
+<h1 id="git">git</h1>
+<h3 id="git-functionality-extensions">Git functionality extensions</h3>
+<p>I decided to stick to plain git config for most functionality instead of writing separate bash helpers.
+The ones I use most often are <code>git find-commits-changed-file</code>, <code>git resubmit</code>, <code>git get-upstream</code>: link to <a href="https://github.com/diepfote/dot-files/blob/a2e4b1cc6bfe470d1c75760cb59665fec2b5c1ca/.gitconfig#L13">aliases</a>  </p>
+<h4 id="git-resubmit">git resubmit</h4>
+<ul>
+<li><code>git add</code> the files you specified as parameters to the staging area</li>
+<li>run <code>git commit --amend --no-edit</code></li>
+<li>run <code>git push --force-with-lease</code>, if you require <code>--force</code> use <code>git resubmit-force</code></li>
+</ul>
+<p>Note that <code>git redo</code> is also available, it does the same thing but stops short of pushing to the repo.</p>
+<h4 id="git-get-upstream">git get-upstream</h4>
+<ul>
+<li>Runs <code>git update</code>, which moves to <code>master</code> and <code>git pull</code>s it. Should this fail it runs a <code>git fetch origin/master</code> only.</li>
+<li>It moves back to the previous branch</li>
+<li>It runs <code>git rebase master</code></li>
+</ul>
+<p>TL;DR: Rebases current branch onto <code>origin/master</code></p>
+<h4 id="rarely-used-but-gems-if-you-need-them">Rarely used but gems if you need them</h4>
+<ul>
+<li><code>git list-all-files-ever-tracked</code> and <code>git reflog-list-all-files-ever-tracked</code>: sometimes you are looking for an old file and you half-remember its path...</li>
+<li><code>git content-grep</code> and <code>git log-grep</code>: look for part of a file across the history of the entire repo. Or for a certain commit message...</li>
+</ul>
+<h3 id="fast-access-to-various-repos">Fast access to various repos</h3>
+<p>For faster access to the numerous git repos I use for my config I set up bash functions to operate on them from any path. 
+These jump to these repos/files directly: <a href="https://github.com/diepfote/scripts/blob/3ac0081bbf178b4f9e630513e51c87bd8eee7527/source-me/posix-compliant-shells.sh#L589">general</a>, <a href="https://github.com/diepfote/scripts/blob/703963f7ace80a5b61e182b09cb0884e547be436/source-me/linux/posix-compliant-shells.sh#L179">linux only</a><br />
+All of these use custom completion rules 
+(if you hit tab bash will provide a list of files
+in the actual repo, not the current directory).
+This is an <a href="https://github.com/diepfote/scripts/blob/32000c108f5a6498b1c721151dee667adf078092/source-me/completions_golang.sh">example</a>
+of how these completions are set up.</p>
+<p>Examples are:</p>
+<p><details>
+
+
+<pre><code class="language-text">edit-script
+log-script
+commit-script
+reset-script
+diff-script
+status-script
+edit-go
+log-go
+commit-go
+reset-go
+diff-go
+status-go
+</code></pre>
+
+
+</details></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="kubectl-bash-completion-patching/" class="btn btn-neutral float-right" title="Extend kubectl bash completions/extend oc bash completions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../projects/" class="btn btn-neutral" title="Index"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../projects/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="kubectl-bash-completion-patching/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
