@@ -4,6 +4,7 @@ Projects
 
 - [Youtube video-syncer](#youtube-video-syncer)
 - [Sync MPV watch-later files](#sync-mpv-watch-later-files)
+- [Filestile](#filestile)
 - [Local podcast publisher](#local-podcast-publisher)
 - [Vim plugins](#vim-plugins)
 - [Vim mappings and functions](#vim-mappings-and-functions)
@@ -23,6 +24,16 @@ Syncs youtube videos between 2 computers via text files.
 [sync-mpv-watch-later-files](https://github.com/diepfote/golang-tools/tree/7f86a2e32d83d6f09f6af758ed267eee826ddef6/sync-video-syncer-mpv-watch-later-files)  
 Syncs `~/.config/mpv/watch_later` or `~/.local/state/mpv/watch_later` directories between 2 computers.
 Uses functionality found in [video-syncer](#youtube-video-syncer) and [report-videos.sh](https://github.com/diepfote/scripts/blob/fc09c10453e8527e3fb53a3c379b128310c60b69/normal-privileges_systemd_scripts/report-videos.sh)
+
+# Filestile
+
+[filestile](https://github.com/diepfote/rust-tools/tree/f54abab35d87dc254806c83f9c6343a00fc6a551/filestile)  
+Just keep one file of many that match a condition (and yes, this is a pun on turnstile and file).
+
+1. It will loop through all files in a given directory (non-recursive)
+2. if there is a regex match it will keep track of this file and note down its created_date
+3. if it encounters another match for this file it will update the entry if the file is older
+4. it will then re-loop through all files and remove any file it did not previously keep track of
 
 # Local podcast publisher  
 
