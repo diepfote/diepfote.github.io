@@ -13,6 +13,7 @@ Projects
 - [Kubectl completion patching](#kubectl-completion-patching)
 - [Execute-on-files](#execute-on-files)
 - [Execute-in-repos](#execute-in-repos)
+- [Execute](#execute)
 
 # Youtube video-syncer
 
@@ -256,4 +257,11 @@ For more details [click](https://github.com/diepfote/golang-tools/tree/621f347af
 Run arbitrary commands in git repos or plain old directories simultaneously/concurrently.
 
 For more details [click](https://github.com/diepfote/golang-tools/tree/621f347afe3196753d8df22daa120fa024d0fdf7/execute-in-repos)
+
+# Execute
+
+A replacement of [execute-in-repos](#execute-in-repos) and [execute-on-files](#execute-on-files)
+written in rust.
+
+For more details [click](https://github.com/diepfote/rust-tools/tree/fbd40deac4c27b6e3d89873a1395365877b13d92/execute)
 
