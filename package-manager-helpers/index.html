@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Florian Sorko">
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Index - Florian Sorko</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Index";
+    var mkdocs_page_input_path = "package-manager-helpers/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Florian Sorko</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Projects, Configs, Cheatsheets</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package manager helpers</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Index</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../projects/">Index</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Terminal config</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../terminal-config/">Index</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../terminal-config/kubectl-bash-completion-patching/">Extend kubectl bash completions/extend oc bash completions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tiling window managers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tiling-window-managers/">Index</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Florian Sorko</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Package manager helpers &raquo;</li>
+        
+      
+    
+    <li>Index</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/diepfote/diepfote.github.io/edit/master/package-manager-helpers/index.md"> Edit on diepfote/diepfote.github.io</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Package manager helpers</p>
+<h4 id="table-of-contents">Table of contents</h4>
+<ol>
+<li><a href="#darwin--mac-os---brew">Brew</a><ul>
+<li><a href="#brew-formulae-require">brew formulae-require</a></li>
+<li><a href="#brew-required-by">brew required-by</a></li>
+<li><a href="#brew-leaves-require">brew leaves-require</a></li>
+</ul>
+</li>
+<li><a href="#arch-linux---yay-and-pacman">Yay and Pacman</a><ul>
+<li><a href="#pacman-throttle-bandwidth">Pacman Throttle Bandwidth</a></li>
+<li><a href="#yay-all">yay-all</a></li>
+<li><a href="#yay-generate-pkgbuild-checksum">yay-generate-PKGBUILD-checksum</a><ul>
+<li><a href="#why">Why?  </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="darwin-mac-os-brew">Darwin / Mac OS - brew</h1>
+<h2 id="brew-formulae-require">brew formulae-require</h2>
+<p><a href="https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-formulae-require">find here</a></p>
+<p>What does <code>curl</code> depend on?</p>
+<pre><code>$ brew formulae-require curl
+curl: brotli ca-certificates gettext libidn2 libnghttp2 libssh2 libunistring openldap openssl@1.1 zstd
+</code></pre>
+<h2 id="brew-required-by">brew required-by</h2>
+<p><a href="https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-required-by">find here</a></p>
+<p>Which packages require <code>gettext</code>?</p>
+<p><em>Hint</em>: Highlights the package you were looking for (not shown here).</p>
+<pre><code>$ brew required-by gettext
+cairo: ca-certificates fontconfig freetype gdbm gettext glib libffi libpng libpthread-stubs libx11 libxau libxcb libxdmcp libxext libxrender lzo mpdecimal openssl@1.1 pcre pixman pkg-config python@3.9 readline sqlite xorgproto xz
+ffmpeg: aom bdw-gc brotli ca-certificates cairo cjson cmocka dav1d flac fontconfig freetype frei0r fribidi gdbm gettext giflib glib gmp gnutls gobject-introspection graphite2 guile harfbuzz icu4c imath jpeg jpeg-xl lame leptonica libarchive libass libb2 libbluray libevent libffi libidn2 libnghttp2 libogg libpng libpthread-stubs librist libsamplerate libsndfile libsodium libsoxr libtasn1 libtiff libtool libunistring libvidstab libvmaf libvorbis libvpx libx11 libxau libxcb libxdmcp libxext libxrender little-cms2 lz4 lzo m4 mbedtls mpdecimal nettle opencore-amr openexr openjpeg openssl@1.1 opus p11-kit pcre pixman pkg-config python@3.9 rav1e readline rubberband sdl2 snappy speex sqlite srt tesseract theora unbound webp x264 x265 xorgproto xvid xz zeromq zimg zstd
+...
+</code></pre>
+<h2 id="brew-leaves-require">brew leaves-require</h2>
+<p><a href="https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/darwin/brew-leaves-require">find here</a></p>
+<p>Shows all dependencies for all leaf packages:</p>
+<pre><code>$ brew leaves-require
+...
+pango: ca-certificates cairo fontconfig freetype fribidi gdbm gettext glib gobject-introspection graphite2 harfbuzz icu4c libffi libpng libpthread-stubs libx11 libxau libxcb libxdmcp libxext libxrender lzo mpdecimal openssl@1.1 pcre pixman pkg-config python@3.9 readline sqlite xorgproto xz
+qemu: bdw-gc ca-certificates gdbm gettext glib gmp gnutls guile jpeg libevent libffi libidn2 libnghttp2 libpng libslirp libssh libtasn1 libtool libunistring libusb lzo m4 mpdecimal ncurses nettle openssl@1.1 p11-kit pcre pixman pkg-config python@3.9 readline snappy sqlite unbound vde xz
+...
+</code></pre>
+<h1 id="arch-linux-yay-and-pacman">Arch Linux - yay and pacman</h1>
+<h2 id="pacman-throttle-bandwidth">Pacman Throttle Bandwidth</h2>
+<p>If you are on a slow internet connection and you do not want to break
+internet access for anyone else on the network (or yourself for that matter)
+you need to throttle <code>pacman</code> and <code>yay</code>.<br />
+This is why I wrap both commands. They are throttled or unthrottled based on
+the file <code>/tmp/pacman-bandwidth-limit</code>.</p>
+<ul>
+<li><a href="https://github.com/diepfote/scripts/blob/1db0a8c5715fdba6897987422d7725f50de8fdd8/bin/linux/pacman#L65-L72"><code>pacman</code></a></li>
+<li><a href="https://github.com/diepfote/scripts/blob/8b597bb25948b2aebba4643834e7cb49b3ff45af/bin/linux/yay#L48-L55"><code>yay</code></a></li>
+</ul>
+<p>This is implemented via <a href="https://github.com/mariusae/trickle">trickle</a>.</p>
+<h2 id="yay-all">yay-all</h2>
+<p><a href="https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/bin/linux/yay-all">find here</a></p>
+<ul>
+<li>downloads new official packages (runs <code>pacman -Syu</code>)</li>
+<li>then executes <code>yay -G &lt;pkg-name</code> (updates PKGBUILD)</li>
+<li>generates a checksum for the updated PKGBUILD to check if it matches the manually generated checksum</li>
+<li>if it matches it starts an automated update (root privileges required, single time sudo approval)</li>
+<li>it does this ^ for a list of packages defined in <code>pkgs_with_saved_checksums=()</code></li>
+<li>afterwards it runs a normal <code>yay</code> upgrade and asks the user if he/she want to upgrade the remaining packages</li>
+</ul>
+<h2 id="yay-generate-pkgbuild-checksum">yay-generate-PKGBUILD-checksum</h2>
+<p><a href="https://github.com/diepfote/scripts/blob/20e3c1d8f566180e500e9dff28ee5914c090a3ee/source-me/linux/posix-compliant-shells.sh#L289">find here</a></p>
+<p>This supplements yay-all. It generates checksums for AUR PKGBUILDs.</p>
+<h3 id="why">Why?</h3>
+<p>A PKGBUILD contains a checksum and pkg version section. 
+These alter the checksum generated for a PKGBUILD anytime there is a version update.
+The point of this function/script is to ignore changes unless instructions in a given PKGBUILD change.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../projects/" class="btn btn-neutral float-right" title="Index">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Projects, Configs, Cheatsheets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
